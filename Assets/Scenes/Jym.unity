@@ -168,7 +168,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -275,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 1150562349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -291,7 +291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32257f4d1e3e99e4a811cf1468bfc03f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: 9.8
 --- !u!1 &1370123147
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,13 +314,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1370123147}
-  m_LocalRotation: {x: -0.11885578, y: -0, z: -0, w: 0.9929115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.435, z: 0.357}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1809094292}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -13.652, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1370123149
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -507,6 +506,7 @@ GameObject:
   - component: {fileID: 1809094295}
   - component: {fileID: 1809094293}
   - component: {fileID: 1809094296}
+  - component: {fileID: 1809094297}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -520,8 +520,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1809094291}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.25, y: -3.71, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1505645126}
@@ -529,7 +529,7 @@ Transform:
   - {fileID: 1370123148}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &1809094293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e86aecccd972343808d8a994b06e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gravity: 9.8
 --- !u!54 &1809094294
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -581,6 +582,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rotationSpeed: 125
+--- !u!114 &1809094297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809094291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40b60f7d5a841444bc5e0e28e8fa255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shoot: {fileID: 114459449289000636, guid: c4babc70082eaeb438025675acddfabd, type: 2}
+  Gun: {fileID: 1370123148}
+  power: 800
 --- !u!1 &1922243434
 GameObject:
   m_ObjectHideFlags: 0

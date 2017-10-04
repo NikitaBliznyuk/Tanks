@@ -6,18 +6,23 @@ namespace Planet
     [RequireComponent(typeof(Collider))]
     public class GravityBody : MonoBehaviour
     {
+        [Header("Settings")]
+        [SerializeField]
+        private float gravity = 9.8f;
+        
         private PlanetGravity planetGravity;
-        private Rigidbody thisRigidbody;
+        
+        public Rigidbody ThisRigidbody { get; private set; }
 
         private void Awake()
         {
             planetGravity = PlanetGravity.Instance;
-            thisRigidbody = GetComponent<Rigidbody>();
+            ThisRigidbody = GetComponent<Rigidbody>();
         }
 
         private void FixedUpdate()
         {
-            planetGravity.ApplyGravity(thisRigidbody);
+            planetGravity.ApplyGravity(ThisRigidbody, gravity);
         }
     }
 }

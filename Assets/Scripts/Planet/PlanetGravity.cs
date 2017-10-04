@@ -4,10 +4,6 @@ namespace Planet
 {
     public class PlanetGravity : MonoBehaviour
     {
-        [Header("Settings")]
-        [SerializeField]
-        private float gravity = 9.8f;
-
         public static PlanetGravity Instance;
 
         private void Awake()
@@ -15,7 +11,7 @@ namespace Planet
             Instance = this;
         }
 
-        public void ApplyGravity(Rigidbody target)
+        public void ApplyGravity(Rigidbody target, float gravity)
         {
             Vector3 gravityUp = (target.position - transform.position).normalized;
             target.AddForce(gravityUp * -gravity);
