@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Planet;
+﻿using Planet;
 using UnityEngine;
 
 namespace Tank.Shoot

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Planet;
+﻿using Planet;
 using UnityEngine;
 
 public class SmoothCamera : MonoBehaviour

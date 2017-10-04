@@ -1,5 +1,4 @@
-﻿using Planet;
-using Tank.Shoot;
+﻿using Tank.Shoot;
 using UnityEngine;
 using UnityEngine.UI;
 
