@@ -4,7 +4,7 @@
     <list default="true" id="aef83089-1655-4d9b-a7c4-484a695f463c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Tanks/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scenes/Jym.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/Jym.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Tank/Shoot.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Tank/Shoot.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,17 +46,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shoot.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shoot.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/Shoot.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="570">
+              <caret line="30" column="72" lean-forward="false" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
               <folding>
-                <marker date="1507102771863" expanded="false" signature="6:32" ph="..." />
-                <marker date="1507102771863" expanded="true" signature="54:636" ph="{...}" />
-                <marker date="1507102771863" expanded="true" signature="139:634" ph="{...}" />
-                <marker date="1507102771863" expanded="true" signature="278:353" ph="{...}" />
-                <marker date="1507102771863" expanded="true" signature="409:628" ph="{...}" />
+                <marker date="1507119830993" expanded="true" signature="6:51" ph="..." />
+                <marker date="1507119830993" expanded="true" signature="73:1075" ph="{...}" />
+                <marker date="1507119830993" expanded="true" signature="158:1073" ph="{...}" />
+                <marker date="1507119830993" expanded="true" signature="306:381" ph="{...}" />
+                <marker date="1507119830993" expanded="true" signature="437:1067" ph="{...}" />
+                <marker date="1507119830993" expanded="true" signature="642:1023" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -83,26 +84,26 @@
       <file leaf-file-name="TankStats.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/TankStats.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            <state relative-caret-position="779">
+              <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding>
-                <marker date="1507103474630" expanded="true" signature="6:100" ph="..." />
-                <marker date="1507103474630" expanded="true" signature="153:937" ph="{...}" />
-                <marker date="1507103474630" expanded="true" signature="468:516" ph="{...}" />
-                <marker date="1507103474630" expanded="true" signature="542:589" ph="{...}" />
-                <marker date="1507103474630" expanded="true" signature="616:682" ph="{...}" />
-                <marker date="1507103474630" expanded="true" signature="724:935" ph="{...}" />
-                <marker date="1507103474630" expanded="true" signature="876:929" ph="{...}" />
+                <marker date="1507119786322" expanded="false" signature="6:100" ph="..." />
+                <marker date="1507119786322" expanded="true" signature="153:937" ph="{...}" />
+                <marker date="1507119786322" expanded="true" signature="468:516" ph="{...}" />
+                <marker date="1507119786322" expanded="true" signature="542:589" ph="{...}" />
+                <marker date="1507119786322" expanded="true" signature="616:682" ph="{...}" />
+                <marker date="1507119786322" expanded="true" signature="724:935" ph="{...}" />
+                <marker date="1507119786322" expanded="true" signature="876:929" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SmoothCamera.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SmoothCamera.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+            <state relative-caret-position="418">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding>
                 <marker date="1507108429246" expanded="false" signature="6:92" ph="..." />
                 <marker date="1507108429246" expanded="true" signature="135:935" ph="{...}" />
@@ -119,10 +120,28 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1507103281083" expanded="true" signature="6:40" ph="..." />
+                <marker date="1507103281083" expanded="false" signature="6:40" ph="..." />
                 <marker date="1507103281083" expanded="true" signature="113:482" ph="{...}" />
                 <marker date="1507103281083" expanded="true" signature="254:305" ph="{...}" />
                 <marker date="1507103281083" expanded="true" signature="344:480" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShootTest.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/ShootTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+              <folding>
+                <marker date="1507102527671" expanded="false" signature="6:72" ph="..." />
+                <marker date="1507102527671" expanded="true" signature="112:1185" ph="{...}" />
+                <marker date="1507102527671" expanded="true" signature="377:432" ph="{...}" />
+                <marker date="1507102527671" expanded="true" signature="459:1183" ph="{...}" />
+                <marker date="1507102527671" expanded="true" signature="510:564" ph="{...}" />
+                <marker date="1507102527671" expanded="true" signature="611:676" ph="{...}" />
+                <marker date="1507102527671" expanded="true" signature="724:1106" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -134,25 +153,7 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1507102680245" expanded="true" signature="28:67" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShootTest.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/ShootTest.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-              <folding>
-                <marker date="1507102527671" expanded="true" signature="6:72" ph="..." />
-                <marker date="1507102527671" expanded="true" signature="112:1185" ph="{...}" />
-                <marker date="1507102527671" expanded="true" signature="377:432" ph="{...}" />
-                <marker date="1507102527671" expanded="true" signature="459:1183" ph="{...}" />
-                <marker date="1507102527671" expanded="true" signature="510:564" ph="{...}" />
-                <marker date="1507102527671" expanded="true" signature="611:676" ph="{...}" />
-                <marker date="1507102527671" expanded="true" signature="724:1106" ph="{...}" />
+                <marker date="1507119796452" expanded="true" signature="28:67" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -185,11 +186,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Planet/GravityBody.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tank/MovementController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tank/ShootTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tank/HealthUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tank/TankStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tank/IVulnerable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tank/Shoot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tank/HealthUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tank/TankStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs" />
       </list>
     </option>
   </component>
@@ -230,68 +231,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tanks (2 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tanks (2 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assembly-CSharp" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scripts" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tank" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tanks (2 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assembly-CSharp" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scripts" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tanks (2 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assembly-CSharp" />
               <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,12 +339,14 @@
       <updated>1507034235470</updated>
       <workItem from="1507034241251" duration="15770000" />
       <workItem from="1507093320423" duration="137000" />
-      <workItem from="1507093579070" duration="13999000" />
+      <workItem from="1507093579070" duration="14338000" />
+      <workItem from="1507119083311" duration="52000" />
+      <workItem from="1507119167471" duration="678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30537000" />
+    <option name="totallyTimeSpent" value="31606000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,6 +394,256 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet/PlanetGravity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <marker date="1507096660043" expanded="true" signature="36:555" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="85:553" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="167:216" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="283:547" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet/GravityBody.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <marker date="1507096683263" expanded="true" signature="36:673" ph="{...}" />
+            <marker date="1507096683263" expanded="true" signature="166:671" ph="{...}" />
+            <marker date="1507096683263" expanded="true" signature="418:545" ph="{...}" />
+            <marker date="1507096683263" expanded="true" signature="581:665" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/Shoot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <marker date="1507119830993" expanded="true" signature="6:51" ph="..." />
+            <marker date="1507119830993" expanded="true" signature="73:1075" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="158:1073" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="306:381" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="437:1067" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="642:1023" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/MovementController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding>
+            <marker date="1507102085732" expanded="true" signature="43:1383" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="139:1381" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="424:499" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="530:650" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="686:748" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="777:964" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="995:1375" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/TankStats.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding>
+            <marker date="1507119786322" expanded="false" signature="6:100" ph="..." />
+            <marker date="1507119786322" expanded="true" signature="153:937" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="468:516" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="542:589" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="616:682" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="724:935" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="876:929" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding>
+            <marker date="1507108429246" expanded="false" signature="6:92" ph="..." />
+            <marker date="1507108429246" expanded="true" signature="135:935" ph="{...}" />
+            <marker date="1507108429246" expanded="true" signature="398:438" ph="{...}" />
+            <marker date="1507108429246" expanded="true" signature="470:933" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/HealthUi.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1507103281083" expanded="false" signature="6:40" ph="..." />
+            <marker date="1507103281083" expanded="true" signature="113:482" ph="{...}" />
+            <marker date="1507103281083" expanded="true" signature="254:305" ph="{...}" />
+            <marker date="1507103281083" expanded="true" signature="344:480" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/ShootTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+          <folding>
+            <marker date="1507102527671" expanded="false" signature="6:72" ph="..." />
+            <marker date="1507102527671" expanded="true" signature="112:1185" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="377:432" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="459:1183" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="510:564" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="611:676" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="724:1106" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/IVulnerable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding>
+            <marker date="1507119796452" expanded="true" signature="28:67" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet/PlanetGravity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <marker date="1507096660043" expanded="true" signature="36:555" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="85:553" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="167:216" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="283:547" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet/GravityBody.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <marker date="1507096683263" expanded="true" signature="36:673" ph="{...}" />
+            <marker date="1507096683263" expanded="true" signature="166:671" ph="{...}" />
+            <marker date="1507096683263" expanded="true" signature="418:545" ph="{...}" />
+            <marker date="1507096683263" expanded="true" signature="581:665" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/Shoot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <marker date="1507119830993" expanded="true" signature="6:51" ph="..." />
+            <marker date="1507119830993" expanded="true" signature="73:1075" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="158:1073" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="306:381" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="437:1067" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="642:1023" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/MovementController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding>
+            <marker date="1507102085732" expanded="true" signature="43:1383" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="139:1381" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="424:499" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="530:650" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="686:748" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="777:964" ph="{...}" />
+            <marker date="1507102085732" expanded="true" signature="995:1375" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/TankStats.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding>
+            <marker date="1507119786322" expanded="false" signature="6:100" ph="..." />
+            <marker date="1507119786322" expanded="true" signature="153:937" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="468:516" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="542:589" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="616:682" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="724:935" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="876:929" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/HealthUi.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1507103281083" expanded="false" signature="6:40" ph="..." />
+            <marker date="1507103281083" expanded="true" signature="113:482" ph="{...}" />
+            <marker date="1507103281083" expanded="true" signature="254:305" ph="{...}" />
+            <marker date="1507103281083" expanded="true" signature="344:480" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/ShootTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+          <folding>
+            <marker date="1507102527671" expanded="false" signature="6:72" ph="..." />
+            <marker date="1507102527671" expanded="true" signature="112:1185" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="377:432" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="459:1183" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="510:564" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="611:676" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="724:1106" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding>
+            <marker date="1507108429246" expanded="false" signature="6:92" ph="..." />
+            <marker date="1507108429246" expanded="true" signature="135:935" ph="{...}" />
+            <marker date="1507108429246" expanded="true" signature="398:438" ph="{...}" />
+            <marker date="1507108429246" expanded="true" signature="470:933" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/IVulnerable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1507119796452" expanded="true" signature="28:67" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet/PlanetGravity.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -560,35 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet/PlanetGravity.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <marker date="1507096660043" expanded="true" signature="36:555" ph="{...}" />
-            <marker date="1507096660043" expanded="true" signature="85:553" ph="{...}" />
-            <marker date="1507096660043" expanded="true" signature="167:216" ph="{...}" />
-            <marker date="1507096660043" expanded="true" signature="283:547" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/ShootTest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-          <folding>
-            <marker date="1507102527671" expanded="true" signature="6:72" ph="..." />
-            <marker date="1507102527671" expanded="true" signature="112:1185" ph="{...}" />
-            <marker date="1507102527671" expanded="true" signature="377:432" ph="{...}" />
-            <marker date="1507102527671" expanded="true" signature="459:1183" ph="{...}" />
-            <marker date="1507102527671" expanded="true" signature="510:564" ph="{...}" />
-            <marker date="1507102527671" expanded="true" signature="611:676" ph="{...}" />
-            <marker date="1507102527671" expanded="true" signature="724:1106" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/MovementController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -605,26 +767,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/Shoot.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet/PlanetGravity.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="266">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
-            <marker date="1507102771863" expanded="false" signature="6:32" ph="..." />
-            <marker date="1507102771863" expanded="true" signature="54:636" ph="{...}" />
-            <marker date="1507102771863" expanded="true" signature="139:634" ph="{...}" />
-            <marker date="1507102771863" expanded="true" signature="278:353" ph="{...}" />
-            <marker date="1507102771863" expanded="true" signature="409:628" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/IVulnerable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1507102680245" expanded="true" signature="28:67" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="36:555" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="85:553" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="167:216" ph="{...}" />
+            <marker date="1507096660043" expanded="true" signature="283:547" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -634,7 +785,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1507103281083" expanded="true" signature="6:40" ph="..." />
+            <marker date="1507103281083" expanded="false" signature="6:40" ph="..." />
             <marker date="1507103281083" expanded="true" signature="113:482" ph="{...}" />
             <marker date="1507103281083" expanded="true" signature="254:305" ph="{...}" />
             <marker date="1507103281083" expanded="true" signature="344:480" ph="{...}" />
@@ -642,31 +793,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/TankStats.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/ShootTest.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        <state relative-caret-position="665">
+          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
           <folding>
-            <marker date="1507103474630" expanded="true" signature="6:100" ph="..." />
-            <marker date="1507103474630" expanded="true" signature="153:937" ph="{...}" />
-            <marker date="1507103474630" expanded="true" signature="468:516" ph="{...}" />
-            <marker date="1507103474630" expanded="true" signature="542:589" ph="{...}" />
-            <marker date="1507103474630" expanded="true" signature="616:682" ph="{...}" />
-            <marker date="1507103474630" expanded="true" signature="724:935" ph="{...}" />
-            <marker date="1507103474630" expanded="true" signature="876:929" ph="{...}" />
+            <marker date="1507102527671" expanded="false" signature="6:72" ph="..." />
+            <marker date="1507102527671" expanded="true" signature="112:1185" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="377:432" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="459:1183" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="510:564" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="611:676" ph="{...}" />
+            <marker date="1507102527671" expanded="true" signature="724:1106" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/IVulnerable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1507119796452" expanded="true" signature="28:67" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCamera.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        <state relative-caret-position="418">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding>
             <marker date="1507108429246" expanded="false" signature="6:92" ph="..." />
             <marker date="1507108429246" expanded="true" signature="135:935" ph="{...}" />
             <marker date="1507108429246" expanded="true" signature="398:438" ph="{...}" />
             <marker date="1507108429246" expanded="true" signature="470:933" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/TankStats.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <marker date="1507119786322" expanded="false" signature="6:100" ph="..." />
+            <marker date="1507119786322" expanded="true" signature="153:937" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="468:516" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="542:589" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="616:682" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="724:935" ph="{...}" />
+            <marker date="1507119786322" expanded="true" signature="876:929" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tank/Shoot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="72" lean-forward="false" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
+          <folding>
+            <marker date="1507119830993" expanded="true" signature="6:51" ph="..." />
+            <marker date="1507119830993" expanded="true" signature="73:1075" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="158:1073" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="306:381" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="437:1067" ph="{...}" />
+            <marker date="1507119830993" expanded="true" signature="642:1023" ph="{...}" />
           </folding>
         </state>
       </provider>

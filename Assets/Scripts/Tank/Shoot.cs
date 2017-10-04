@@ -1,4 +1,5 @@
-﻿using Planet;
+﻿using System.Linq;
+using Planet;
 using UnityEngine;
 
 namespace Tank.Shoot
@@ -7,6 +8,7 @@ namespace Tank.Shoot
     public class Shoot : MonoBehaviour
     {
         public GravityBody GravityBody { get; private set; }
+        
         public float Damage { get; set; }
 
         private void Awake()
@@ -16,14 +18,21 @@ namespace Tank.Shoot
 
         private void OnCollisionEnter(Collision other)
         {
-            Destroy(gameObject);
-
-            IVulnerable obj = other.collider.GetComponent<IVulnerable>();
-
-            if (obj == null)
+            Collider[] colliders = Physics.OverlapSphere(transform.position, 3.0f);
+            if(colliders.Length == 0)
                 return;
 
-            obj.DealDamage(Damage);
+            foreach (var collider in colliders)
+            {
+                IVulnerable vulnerable = collider.GetComponent<IVulnerable>();
+                if(vulnerable == null)
+                    continue;
+                
+                vulnerable.DealDamage(Damage * Mathf.InverseLerp(3.0f, 0.0f,
+                                          Vector3.Distance(collider.transform.position, transform.position)));
+            }
+
+            Destroy(gameObject);
         }
     }
 }

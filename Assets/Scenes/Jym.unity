@@ -2019,7 +2019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthUi: {fileID: 2034288676}
   maxHealth: 100
-  shootDamage: 25
+  shootDamage: 80
 --- !u!1 &1905192536
 GameObject:
   m_ObjectHideFlags: 0
