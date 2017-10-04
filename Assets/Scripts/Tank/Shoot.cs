@@ -1,18 +1,26 @@
 ﻿using Planet;
 using UnityEngine;
 
-[RequireComponent(typeof(GravityBody))]
-public class Shoot : MonoBehaviour
+namespace Tank.Shoot
 {
-    public GravityBody GravityBody { get; private set; }
-
-    private void Awake()
+    [RequireComponent(typeof(GravityBody))]
+    public class Shoot : MonoBehaviour
     {
-        GravityBody = GetComponent<GravityBody>();
-    }
+        public GravityBody GravityBody { get; private set; }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        Destroy(gameObject);
+        private void Awake()
+        {
+            GravityBody = GetComponent<GravityBody>();
+        }
+
+        private void OnCollisionEnter(Collision other)
+        {
+            Destroy(gameObject);
+
+            if (!other.collider.CompareTag("Environment"))
+            {
+                Destroy(other.gameObject);
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Tank
+namespace Tank.Movement
 {
     [RequireComponent(typeof(Rigidbody))]
     public class MovementController : MonoBehaviour
