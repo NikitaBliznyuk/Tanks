@@ -15,6 +15,13 @@ public class ShootTest : MonoBehaviour
 
     private float currentCharge;
 
+    private TankStats stats;
+
+    private void Awake()
+    {
+        stats = GetComponent<TankStats>();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -28,8 +35,9 @@ public class ShootTest : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Space))
         {
             float t = Mathf.Clamp(currentCharge / maxChargeTime, 0.2f, 1.0f);
-            GravityBody instance = Instantiate(Shoot, ShootSpawn.position, Quaternion.identity).GravityBody;
-            instance.ThisRigidbody.AddForce(Gun.forward.normalized * power * t, ForceMode.Force);
+            Shoot instance = Instantiate(Shoot, ShootSpawn.position, Quaternion.identity);
+            instance.Damage = stats.ShootDamage;
+            instance.GravityBody.ThisRigidbody.AddForce(Gun.forward.normalized * power * t, ForceMode.Force);
             currentCharge = 0.0f;
         }
 

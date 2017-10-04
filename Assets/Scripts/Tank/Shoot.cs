@@ -7,6 +7,7 @@ namespace Tank.Shoot
     public class Shoot : MonoBehaviour
     {
         public GravityBody GravityBody { get; private set; }
+        public float Damage { get; set; }
 
         private void Awake()
         {
@@ -17,10 +18,12 @@ namespace Tank.Shoot
         {
             Destroy(gameObject);
 
-            if (!other.collider.CompareTag("Environment"))
-            {
-                Destroy(other.gameObject);
-            }
+            IVulnerable obj = other.collider.GetComponent<IVulnerable>();
+
+            if (obj == null)
+                return;
+
+            obj.DealDamage(Damage);
         }
     }
 }

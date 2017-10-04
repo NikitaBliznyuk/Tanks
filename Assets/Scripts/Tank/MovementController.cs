@@ -29,8 +29,18 @@ namespace Tank.Movement
 
         private void FixedUpdate()
         {
+            Move();
+            Rotate();
+        }
+
+        private void Move()
+        {
             thisRigidbody.MovePosition(thisRigidbody.position +
                                        transform.forward * input.y * moveSpeed * Time.fixedDeltaTime);
+        }
+
+        private void Rotate()
+        {
             Vector3 yRotation = Vector3.up * input.x * rotationSpeed * Time.fixedDeltaTime;
             Quaternion deltaRotation = Quaternion.Euler(yRotation);
             Quaternion targetRotation = thisRigidbody.rotation * deltaRotation;
