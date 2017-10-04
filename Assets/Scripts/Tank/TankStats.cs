@@ -7,7 +7,7 @@ public class TankStats : MonoBehaviour, IVulnerable
 {
     [Header("References")]
     [SerializeField]
-    private Image healthImage;
+    private HealthUi healthUi;
     
     [Header("Settings")]
     [SerializeField]
@@ -30,7 +30,7 @@ public class TankStats : MonoBehaviour, IVulnerable
 
     private void Update()
     {
-        healthImage.fillAmount = CurrentHealth / maxHealth;
+        healthUi.SetValue(CurrentHealth / maxHealth);
     }
 
     public void DealDamage(float damage)
