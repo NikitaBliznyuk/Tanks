@@ -40,7 +40,7 @@ public class TankStats : MonoBehaviour, IVulnerable
         
         if (CurrentHealth <= 0.0f)
         {
-            Debug.Log("Dead!");
+            Destroy(gameObject);
         }
     }
 }
