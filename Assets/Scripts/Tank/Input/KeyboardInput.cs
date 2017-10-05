@@ -9,4 +9,19 @@ public class KeyboardInput : InputController
         Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         InputVector = input;
     }
+
+    public override bool GetFireKeyDown()
+    {
+        return Input.GetKeyDown(KeyCode.Space);
+    }
+
+    public override bool GetFireKeyUp()
+    {
+        return Input.GetKeyUp(KeyCode.Space);
+    }
+
+    public override bool GetFireKey()
+    {
+        return Input.GetKey(KeyCode.Space);
+    }
 }

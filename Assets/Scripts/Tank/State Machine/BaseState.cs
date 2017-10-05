@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Tank.Movement;
-using UnityEngine;
+﻿using UnityEngine;
 
 public abstract class BaseState
 {
     public Vector2 InputVector { get; protected set; }
+    public Vector3 FireInputVector { get; protected set; }
     
     protected StateController stateController;
     

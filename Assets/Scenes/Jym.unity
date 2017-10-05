@@ -1047,6 +1047,7 @@ GameObject:
   - component: {fileID: 1317789703}
   - component: {fileID: 1317789698}
   - component: {fileID: 1317789697}
+  - component: {fileID: 1317789704}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1159,6 +1160,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rotationSpeed: 125
+--- !u!114 &1317789704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317789695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40b60f7d5a841444bc5e0e28e8fa255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shoot: {fileID: 114459449289000636, guid: c4babc70082eaeb438025675acddfabd, type: 2}
+  Gun: {fileID: 1661483615}
+  ShootSpawn: {fileID: 655731900}
+  CharginSlider: {fileID: 1568877390}
+  power: 950
+  maxChargeTime: 1
 --- !u!1 &1349835984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2079,7 +2097,7 @@ GameObject:
   - component: {fileID: 1809094299}
   m_Layer: 0
   m_Name: Tank
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 public class DrivingState : BaseState
 {
@@ -36,6 +37,11 @@ public class DrivingState : BaseState
 
 	public override void Transition()
 	{
-		
+		Collider[] enemies = Physics.OverlapSphere(stateController.transform.position, 5.0f);
+
+		if (!enemies.Any(col => col.CompareTag("Player")))
+			return;
+
+		stateController.ChangeState(new FiringState());
 	}
 }
