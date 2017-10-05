@@ -13,18 +13,12 @@ namespace Tank.Movement
         private float rotationSpeed = 125.0f;
         
         private Rigidbody thisRigidbody;
-
-        private Vector2 input;
-
+        private InputController inputController;
+        
         private void Awake()
         {
             thisRigidbody = GetComponent<Rigidbody>();
-        }
-
-        private void Update()
-        {
-            input.x = Input.GetAxis("Horizontal");
-            input.y = Input.GetAxis("Vertical");
+            inputController = GetComponent<InputController>();
         }
 
         private void FixedUpdate()
@@ -36,12 +30,12 @@ namespace Tank.Movement
         private void Move()
         {
             thisRigidbody.MovePosition(thisRigidbody.position +
-                                       transform.forward * input.y * moveSpeed * Time.fixedDeltaTime);
+                                       transform.forward * inputController.InputVector.y * moveSpeed * Time.fixedDeltaTime);
         }
 
         private void Rotate()
         {
-            Vector3 yRotation = Vector3.up * input.x * rotationSpeed * Time.fixedDeltaTime;
+            Vector3 yRotation = Vector3.up * inputController.InputVector.x * rotationSpeed * Time.fixedDeltaTime;
             Quaternion deltaRotation = Quaternion.Euler(yRotation);
             Quaternion targetRotation = thisRigidbody.rotation * deltaRotation;
             thisRigidbody.MoveRotation(Quaternion.Slerp(thisRigidbody.rotation, targetRotation, 50f * Time.deltaTime));

@@ -97,16 +97,16 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
-    agentClimb: 0.4
-    ledgeDropHeight: 0
-    maxJumpAcrossDistance: 0
+    agentSlope: 60
+    agentClimb: 2
+    ledgeDropHeight: 4.47
+    maxJumpAcrossDistance: 4.72
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    accuratePlacement: 1
   m_NavMeshData: {fileID: 0}
 --- !u!1 &56721420
 GameObject:
@@ -1044,6 +1044,9 @@ GameObject:
   - component: {fileID: 1317789700}
   - component: {fileID: 1317789699}
   - component: {fileID: 1317789696}
+  - component: {fileID: 1317789703}
+  - component: {fileID: 1317789698}
+  - component: {fileID: 1317789697}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1065,6 +1068,28 @@ MonoBehaviour:
   healthUi: {fileID: 990261017}
   maxHealth: 100
   shootDamage: 25
+--- !u!114 &1317789697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317789695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ffd953b281b534ea99b5d610b6996e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1317789698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317789695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb0fb5f61059a446a240196ac31541e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1317789699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,6 +1146,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -46.986004, y: 14.004001, z: 16.876001}
+--- !u!114 &1317789703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317789695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f3fb46eb0d2df498ed45400f963ec7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  rotationSpeed: 125
 --- !u!1 &1349835984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,6 +2076,7 @@ GameObject:
   - component: {fileID: 1809094296}
   - component: {fileID: 1809094297}
   - component: {fileID: 1809094298}
+  - component: {fileID: 1809094299}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -2145,6 +2184,17 @@ MonoBehaviour:
   healthUi: {fileID: 2034288676}
   maxHealth: 100
   shootDamage: 80
+--- !u!114 &1809094299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809094291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013badc6746d2c741a81fc2e720d6bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1823887566
 GameObject:
   m_ObjectHideFlags: 0
