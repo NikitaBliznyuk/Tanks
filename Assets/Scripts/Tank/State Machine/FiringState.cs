@@ -62,9 +62,9 @@ public class FiringState : BaseState
             input.y = 1.0f;
             currentDelay = -1.0f;
         }
-        else if (fireTarget != null && Math.Abs(InputVector.x) < float.Epsilon)
+        else if (fireTarget != null && Math.Abs(InputVector.x) < float.Epsilon && Mathf.Abs(InputVector.y) <= 0.1f)
         {
-            chargeDelay = Random.Range(0.2f, 0.5f);
+            chargeDelay = Random.Range(0.4f, 0.8f);
             currentDelay = 0.0f;
             input.x = 1.0f;
         }
