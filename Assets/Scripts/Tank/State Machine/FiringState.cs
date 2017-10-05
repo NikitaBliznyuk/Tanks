@@ -13,7 +13,7 @@ public class FiringState : BaseState
         InputVector = GetInput();
         FireInputVector = GetFireInput();
         
-        Collider[] enemies = Physics.OverlapSphere(stateController.transform.position, 5.0f);
+        Collider[] enemies = Physics.OverlapSphere(stateController.transform.position, 10.0f);
         try
         {
             fireTarget = enemies.Select(col => col.transform).First(t => t.CompareTag("Player"));
@@ -37,6 +37,9 @@ public class FiringState : BaseState
             float angle = Vector3.SignedAngle(stateController.transform.forward, direction,
                 stateController.transform.up);
             input.x = Mathf.Abs(angle) > 5.0f ? Mathf.Clamp(angle, -1.0f, 1.0f) : 0.0f;
+            input.y = direction.magnitude > 5.0f && Math.Abs(input.x) < float.Epsilon
+                ? Mathf.Clamp(InputVector.y + Time.deltaTime, -1.0f, 1.0f)
+                : 0.0f;
         }
         
         return input;
@@ -59,7 +62,7 @@ public class FiringState : BaseState
             input.y = 1.0f;
             currentDelay = -1.0f;
         }
-        else
+        else if (fireTarget != null && Math.Abs(InputVector.x) < float.Epsilon)
         {
             chargeDelay = Random.Range(0.2f, 0.5f);
             currentDelay = 0.0f;

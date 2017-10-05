@@ -37,7 +37,7 @@ public class DrivingState : BaseState
 
 	public override void Transition()
 	{
-		Collider[] enemies = Physics.OverlapSphere(stateController.transform.position, 5.0f);
+		Collider[] enemies = Physics.OverlapSphere(stateController.transform.position, 10.0f);
 
 		if (!enemies.Any(col => col.CompareTag("Player")))
 			return;
