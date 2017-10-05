@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Planet;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,7 +21,6 @@ public class FiringState : BaseState
         catch (InvalidOperationException)
         {
             fireTarget = null;
-            FireInputVector = new Vector3(0.0f, 1.0f, 0.0f);
         }
     }
 
@@ -28,8 +28,16 @@ public class FiringState : BaseState
     {
         Vector2 input = Vector2.zero;
 
-        input.y = 0.0f;
-        input.x = 0.5f;
+        if (fireTarget != null)
+        {
+            Vector3 normal = (stateController.transform.position - PlanetGravity.Instance.transform.position)
+                .normalized;
+            Vector3 direction =
+                Vector3.ProjectOnPlane(fireTarget.transform.position - stateController.transform.position, normal);
+            float angle = Vector3.SignedAngle(stateController.transform.forward, direction,
+                stateController.transform.up);
+            input.x = Mathf.Abs(angle) > 5.0f ? Mathf.Clamp(angle, -1.0f, 1.0f) : 0.0f;
+        }
         
         return input;
     }
