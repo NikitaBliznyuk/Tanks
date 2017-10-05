@@ -3,7 +3,7 @@
 public class StateController : MonoBehaviour
 {
     public InputController InputController { get; private set; }
-
+    
     public BaseState CurrentState { get; private set; }
 
     private void Awake()
