@@ -30,7 +30,8 @@ namespace Tank.Movement
         private void Move()
         {
             thisRigidbody.MovePosition(thisRigidbody.position +
-                                       transform.forward * inputController.InputVector.y * moveSpeed * Time.fixedDeltaTime);
+                                       transform.forward * inputController.InputVector.y * moveSpeed *
+                                       Time.fixedDeltaTime);
         }
 
         private void Rotate()
